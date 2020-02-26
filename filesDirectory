@@ -1,0 +1,22 @@
+package nacrosolu;
+import java.io.*;
+import java.io.ObjectInputStream.GetField;
+import java.util.ArrayList;
+
+public class Filee {
+	public static void main(String[] args) {
+		File f= new File("C:\\Users\\STUDENT\\eclipse-workspace\\j\\xyz\\src\\ecommerse");
+		getfile(f);
+		
+	}
+
+	static void getfile(File f) {
+		File[] filesList = f.listFiles();
+		for(File fa : filesList){
+	        if(fa.isDirectory()&&fa.exists())
+	            System.out.println(fa.getName());
+	        if(fa.isFile()){
+	            System.out.println(fa.getName());
+	        }
+	}}
+  
